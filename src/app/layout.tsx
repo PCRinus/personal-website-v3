@@ -14,11 +14,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="h-full px-4 py-6">
-      <body className={cn(GeistSans.className, 'flex h-full flex-col dark:bg-blue-950 dark:text-white')}>
+    <html lang="en" className="px-6 py-6">
+      <body
+        className={cn(
+          GeistSans.className,
+          'flex flex-col bg-gradient-to-tl from-blue-800 via-blue-900 to-gray-900 bg-no-repeat dark:text-slate-200',
+        )}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
           <Header />
-          <main className='flex-1'>{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

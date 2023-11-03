@@ -10,7 +10,7 @@ const typographyVariants = cva([], {
       h2: 'scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0',
       h3: 'scroll-m-20 text-2xl font-semibold tracking-tight',
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
-      p: 'leading-7 [&:not(:first-child)]:mt-6',
+      p: 'leading-7',
     },
   },
   defaultVariants: {
@@ -21,18 +21,20 @@ const typographyVariants = cva([], {
 export type TypographyProps = HTMLAttributes<HTMLHeadingElement> &
   HTMLAttributes<HTMLParagraphElement> &
   VariantProps<typeof typographyVariants> & {
-    text: string;
+    children?: React.ReactNode;
   };
 
-const Typography = forwardRef<HTMLHeadingElement, TypographyProps>(({ className, variant, text, ...props }, ref) => {
-  const Comp = variant ? variant : 'p';
+const Typography = forwardRef<HTMLHeadingElement, TypographyProps>(
+  ({ className, variant, children, ...props }, ref) => {
+    const Comp = variant ? variant : 'p';
 
-  return (
-    <Comp className={cn(typographyVariants({ variant, className }))} ref={ref} {...props}>
-      {text}
-    </Comp>
-  );
-});
+    return (
+      <Comp className={cn(typographyVariants({ variant, className }))} ref={ref} {...props}>
+        {children}
+      </Comp>
+    );
+  },
+);
 Typography.displayName = 'Typography';
 
 export { Typography, typographyVariants };

@@ -1,13 +1,25 @@
+'use client';
+
 import { Menu } from 'lucide-react';
+import { useState } from 'react';
 
 import { Button } from './ui/button';
+import Drawer from './ui/drawer';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
-    <header className="flex items-center justify-end text-white">
-      <Button variant={'ghost'}>
-        <Menu />
-      </Button>
-    </header>
+    <>
+      <header className="sticky top-0 flex items-center justify-end text-white">
+        <Button variant={'ghost'} onClick={toggleMenu}>
+          <Menu />
+        </Button>
+      </header>
+
+      <Drawer isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+    </>
   );
 }
