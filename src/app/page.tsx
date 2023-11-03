@@ -1,5 +1,5 @@
+import { Typography } from '@/components/ui/typography';
+
 export default function Home() {
-  return (
-    <h1>Personal website</h1>
-  )
+  return <Typography text="Mircea Casapu" className="text-white" variant={'h1'} />;
 }

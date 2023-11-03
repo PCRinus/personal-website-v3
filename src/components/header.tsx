@@ -4,8 +4,7 @@ import { Button } from './ui/button';
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between bg-blue-950 p-2 text-white">
-      <p>Mircea Casapu</p>
+    <header className="flex items-center justify-end text-white">
       <Button variant={'ghost'}>
         <Menu />
       </Button>
