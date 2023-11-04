@@ -1,18 +1,19 @@
+import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
-import javascriptLogo from '../../../public/javascript.svg';
 import nodejsLogo from '../../../public/nodejs.svg';
 import tsLogo from '../../../public/typescript.svg';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import { Typography } from '../ui/typography';
 
 export type TechStackProps = {
   className?: string;
 };
 
-export default function TechStack({ className }: TechStackProps) {
+export default function TechStackFragment({ className }: TechStackProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>Tech stack</Typography>
@@ -24,23 +25,9 @@ export default function TechStack({ className }: TechStackProps) {
             Typescript
           </CardTitle>
           <CardDescription className="text-white">
-            My current language of choice when building full stack applications
+            My current language of choice when building any web application
           </CardDescription>
         </CardHeader>
-        <CardContent></CardContent>
-      </Card>
-
-      <Card className="bg-inherit dark:text-white">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-4">
-            <Image src={javascriptLogo} alt="Javascript logo" width={32} height={32} />
-            Javascript
-          </CardTitle>
-          <CardDescription className="text-white">
-            My current language of choice when building full stack applications
-          </CardDescription>
-        </CardHeader>
-        <CardContent></CardContent>
       </Card>
 
       <Card className="bg-inherit dark:text-white">
@@ -50,11 +37,16 @@ export default function TechStack({ className }: TechStackProps) {
             Node.js
           </CardTitle>
           <CardDescription className="text-white">
-            My current language of choice when building full stack applications
+            My preferred backend runtime when building full stack applications
           </CardDescription>
         </CardHeader>
-        <CardContent></CardContent>
       </Card>
+
+      <Link href="/tech-stack">
+        <Typography variant={'h3'}>
+          See all the technologies I work with <ChevronRight className="mb-1 inline-flex self-center" />
+        </Typography>
+      </Link>
     </div>
   );
 }

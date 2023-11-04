@@ -14,8 +14,8 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 flex items-center justify-end text-white">
-        <Button variant={'ghost'} onClick={toggleMenu}>
-          <Menu />
+        <Button variant={'ghost'} onClick={toggleMenu} className='p-0'>
+          <Menu/>
         </Button>
       </header>
 

@@ -1,6 +1,7 @@
 import { Github, Linkedin } from 'lucide-react';
 
-import TechStack from '@/components/homepage/tech-stack';
+import MyWorkFragment from '@/components/homepage/my-work-fragment';
+import TechStackFragment from '@/components/homepage/tech-stack-fragment';
 import { Typography } from '@/components/ui/typography';
 
 export default function Home() {
@@ -23,7 +24,9 @@ export default function Home() {
         <Linkedin />
       </div>
 
-      <TechStack className="mt-4" />
+      <TechStackFragment className="mt-4" />
+
+      <MyWorkFragment className="mt-4" />
     </div>
   );
 }
