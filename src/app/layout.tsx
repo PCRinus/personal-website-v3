@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={cn(
           GeistSans.className,
-          'flex flex-col bg-gradient-to-tl from-blue-800 via-blue-900 to-gray-900 bg-no-repeat dark:text-slate-200',
+          'flex flex-col bg-gradient-to-br from-violet-800 via-blue-900 to-gray-900 bg-no-repeat dark:text-slate-200',
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
