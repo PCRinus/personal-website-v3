@@ -10,7 +10,7 @@ const typographyVariants = cva([], {
       h2: 'scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0',
       h3: 'scroll-m-20 text-2xl font-semibold tracking-tight',
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
-      p: 'leading-7',
+      p: 'text-base leading-7',
     },
   },
   defaultVariants: {

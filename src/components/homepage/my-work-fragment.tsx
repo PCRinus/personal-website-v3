@@ -44,7 +44,7 @@ export default function MyWorkFragment({ className }: MyWorkFragmentProps) {
         </CardContent>
       </Card>
 
-      <Link href="/tech-stack">
+      <Link href="/experience">
         <Typography variant={'h3'}>
           See all the projects I have worked on <ChevronRight className="mb-1 inline-flex self-center" />
         </Typography>
