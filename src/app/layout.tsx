@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 
 import './globals.css';
 import Footer from '@/components/footer';
-import Header from '@/components/header';
 import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="px-6 py-6">
+    <html lang="en" className="px-6 py-8">
       <body
         className={cn(
           GeistSans.className,
@@ -22,7 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
-          <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
