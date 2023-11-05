@@ -10,5 +10,80 @@
       "description": "Personal website and portfolio"
     },
     "content": "I am a product oriented developer who builds web applications and products that help businesses and start-ups deliver value to their customers."
+  },
+  "experience": {
+    "metadata": {
+      "title": "Mircea Casapu | Experience",
+      "description": "Professional experience"
+    },
+    "content": {
+      "experience": "Experience"
+    },
+    "tags": {
+      "typescript": "Typescript",
+      "javascript": "Javascript",
+      "nodejs": "Node.js",
+      "react": "React",
+      "tailwind": "Tailwind",
+      "aws": "AWS - Amazon Web Platform",
+      "nestjs": "Nest.js",
+      "microservices": "Microservices",
+      "graphql": "GraphQL",
+      "gcp": "GCP - Google Cloud Platform",
+      "dotnet-framework": ".NET Framework",
+      "ms-sql-server": "Microsoft SQL Server",
+      "jquery": "jQuery",
+      "php": "PHP",
+      "symfony": "Symfony",
+      "mariadb": "MariaDb",
+      "angular": "Angular",
+      "ruby-on-rails": "Ruby on Rails",
+      "postgres": "PostgreSQL"
+    },
+    "doctari": {
+      "title": "Senior Full Stack Developer",
+      "company": "doctari",
+      "period": "Sept 2022 - present",
+      "type": "Full-time",
+      "location": "Remote",
+      "description": "I have delivered high-quality, reliable and thoroughly tested new features for our users, which were clinics and hospitals in Germany. Provide technical guidance and leadership to other engineers on the team. Work closely with the product stakeholders",
+      "link": "https://www.doctari.ro/"
+    },
+    "endava": {
+      "title": "Full Stack Developer",
+      "company": "Endava",
+      "period": "Jan 2022 - Sept 2022",
+      "type": "Full-time",
+      "location": "Remote",
+      "description": "I helped to migrate a legacy monolithic express.js application, for a client in the insurance industry, which was deployed on GCP to a microservices architecture app build with Nest.js and deployed on AWS. I have architected and built a GraphQL API to be used by the frontend team. I have also guided junior developers on the team and helped them grow.",
+      "link": "https://www.endava.com/en/"
+    },
+    "unifiedpost": {
+      "title": "Full Stack Developer",
+      "company": "Unifiedpost Group",
+      "period": "Sept 2021 - Dec 2021",
+      "type": "Contractor",
+      "location": "Remote",
+      "description": "We were tasked with developing a SaaS, which had the objective of making accounting easier for our clients. I helped develop one of the core features, namely the file upload, that also had integrated OCR for easier data extraction. I also improved various UI/UX aspects of our service, along with other small fixes and improvements.",
+      "link": "https://www.unifiedpostgroup.com"
+    },
+    "newpharma": {
+      "title": "Full Stack Developer",
+      "company": "Newpharma Development",
+      "period": "Sept 2020 - Sept 2021",
+      "type": "Part-time",
+      "location": "Remote",
+      "description": "As a Full Stack Web Developer, I helped develop new features for internal tools used by Newpharma, the largest Belgian online pharmacy. <br></br> <br></br> I helped in developing tools used for customer support, order refunding, warehouse management, pharmacy management, as well as internal frameworks and libraries, such as our internal API library. I also helped to review code for my peers.",
+      "link": "https://www.newpharma-development.ro/"
+    },
+    "nokia": {
+      "title": "Junior Full Stack Developer",
+      "company": "Nokia",
+      "period": "Oct 2019 - Sept 2020",
+      "type": "Part-time",
+      "location": "Hybrid",
+      "description": "I worked in a multicultural and diverse team, made up of Romanian and Finnish people. I helped in improving and maintaining an internal tool, used by the management for KPI creation, management, and tracking. With my help, the internal tool got a new, modern UI, along with major improvements to the UX.",
+      "link": "https://www.nokia.com/"
+    }
   }
 }

@@ -7,8 +7,83 @@
   "home": {
     "metadata": {
       "title": "Mircea Casapu | Acasă",
-      "description": "Website si portofoliu personal"
+      "description": "Website și portofoliu personal"
     },
     "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor."
+  },
+  "experience": {
+    "metadata": {
+      "title": "Mircea Casapu | Experiență",
+      "description": "Experiență profesională"
+    },
+    "content": {
+      "experience": "Experiență"
+    },
+    "tags": {
+      "typescript": "Typescript",
+      "javascript": "Javascript",
+      "nodejs": "Node.js",
+      "react": "React",
+      "tailwind": "Tailwind",
+      "aws": "AWS - Amazon Web Platform",
+      "nestjs": "Nest.js",
+      "microservices": "Microservices",
+      "graphql": "GraphQL",
+      "gcp": "GCP - Google Cloud Platform",
+      "dotnet-framework": ".NET Framework",
+      "ms-sql-server": "Microsoft SQL Server",
+      "jquery": "jQuery",
+      "php": "PHP",
+      "symfony": "Symfony",
+      "mariadb": "MariaDb",
+      "angular": "Angular",
+      "ruby-on-rails": "Ruby on Rails",
+      "postgres": "PostgreSQL"
+    },
+    "doctari": {
+      "title": "Inginer Full Stack Senior",
+      "company": "doctari",
+      "period": "Sept 2022 - prezent",
+      "type": "Full-time",
+      "location": "La distanță",
+      "description": "Am livrat funcționalități noi, fiabile și testate temeinic pentru utilizatorii noștri, care erau clinici și spitale din Germania. De asemenea, am oferit îndrumare tehnica și leadership altor ingineri din echipă. Am lucrat îndeaproape cu stakeholderii produsului nostru",
+      "link": "https://www.doctari.ro/"
+    },
+    "endava": {
+      "title": "Inginer Full Stack",
+      "company": "Endava",
+      "period": "Ian 2022 - Sept 2022",
+      "type": "Full-time",
+      "location": "La distanță",
+      "description": "Am ajutat la migrarea unei aplicații monolitice vechi, pentru un client din industria asigurărilor, care a fost construita cu express.js si implementata pe GCP, într-o aplicație cu micro-servicii construită cu Nest.js și implementată pe AWS. Am proiectat și construit un API GraphQL pentru a fi folosit de echipa frontend. De asemenea, am îndrumat dezvoltatorii juniori în echipă și i-am ajutat să crească",
+      "link": "https://www.endava.com/en/"
+    },
+    "unifiedpost": {
+      "title": "Inginer Full Stack",
+      "company": "Unifiedpost Group",
+      "period": "Sept 2021 - Dec 2021",
+      "type": "Contractor",
+      "location": "La distanță",
+      "description": "Am fost însărcinați să dezvoltăm un SaaS, care avea ca scop să facă contabilitatea mai usoara pentru clientii nostri. Am ajutat la dezvoltarea uneia dintre caracteristicile de bază, și anume încărcarea de fișiere, care avea și OCR integrat pentru extragerea mai ușoară a datelor. Am îmbunătățit și diverse aspecte UI/UX ale serviciului nostru, împreună cu alte mici remedieri și îmbunătățiri.",
+      "link": "https://www.unifiedpostgroup.com"
+    },
+    "newpharma": {
+      "title": "Dezvoltator Full Stack",
+      "company": "Newpharma Development",
+      "period": "Sept 2020 - Sept 2021",
+      "type": "Part-time",
+      "location": "La distanță",
+      "description": "În calitate de dezvoltator web Full Stack, am ajutat la dezvoltarea de noi funcții pentru interne instrumente folosite de Newpharma, cea mai mare farmacie online belgiană. <br></br> <br></br> Am ajutat la dezvoltarea instrumentelor utilizate pentru asistența clienților, rambursarea comenzilor, managementul depozitului, managementul farmaciei, precum și intern cadre și biblioteci, cum ar fi biblioteca noastră internă API. Am ajutat si eu codul de recenzie pentru colegii mei.",
+      "link": "https://www.newpharma-development.ro/"
+    },
+    "nokia": {
+      "title": "Dezvoltator Full Stack Junior",
+      "company": "Nokia",
+      "period": "Oct 2019 - Sept 2020",
+      "type": "Part-time",
+      "location": "Hibrid",
+      "description": "Am lucrat într-un mediu multicultural, cu o echipă diversă, formată din români și finlandezi. Am ajutat la îmbunătățirea și menținerea unui instrument intern, utilizat de management pentru crearea, gestionarea si urmarirea de KPI. Cu ajutorul meu, instrumentul intern a primit un UI nou si modern, împreună cu îmbunătățiri majore de UX.",
+      "link": "https://www.nokia.com/"
+    }
   }
 }

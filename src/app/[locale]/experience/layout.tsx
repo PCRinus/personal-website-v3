@@ -1,9 +1,13 @@
-import { Metadata } from 'next';
+import { getTranslator } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: 'Mircea Casapu | Experience',
-  description: 'Personal website',
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslator(locale, 'experience');
+
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
 
 export default function ExperienceLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
