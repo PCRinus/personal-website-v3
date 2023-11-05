@@ -1,17 +1,21 @@
 import { GeistSans } from 'geist/font';
-import type { Metadata } from 'next';
 import './globals.css';
 import { notFound } from 'next/navigation';
+import { getTranslator } from 'next-intl/server';
 
 import Footer from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
 import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
 
-export const metadata: Metadata = {
-  title: 'Mircea Casapu | Home',
-  description: 'Personal website',
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslator(locale, 'home');
+
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+  };
+}
 
 export default function RootLayout({
   children,

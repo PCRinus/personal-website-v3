@@ -1,5 +1,14 @@
 {
   "common": {
-    "name": "Mircea Casapu"
+    "name": "Mircea Casapu",
+    "current-job": "Inginer Full Stack Senior",
+    "current-employer": "doctari"
+  },
+  "home": {
+    "metadata": {
+      "title": "Mircea Casapu | Acasă",
+      "description": "Website si portofoliu personal"
+    },
+    "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor."
   }
 }

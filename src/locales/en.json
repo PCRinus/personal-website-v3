@@ -1,5 +1,14 @@
 {
   "common": {
-    "name": "Mircea Casapu"
+    "name": "Mircea Casapu",
+    "current-job": "Senior Full Stack",
+    "current-employer": "doctari"
+  },
+  "home": {
+    "metadata": {
+      "title": "Mircea Casapu | Home",
+      "description": "Personal website and portfolio"
+    },
+    "content": "I am a product oriented developer who builds web applications and products that help businesses and start-ups deliver value to their customers."
   }
 }
