@@ -9,11 +9,11 @@ import rcmp from '../../../public/rcmp.svg';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Typography } from '../ui/typography';
 
-type MyWorkFragmentProps = {
+type MyWorkProps = {
   className?: string;
 };
 
-export default function MyWorkFragment({ className }: MyWorkFragmentProps) {
+export default function MyWork({ className }: MyWorkProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>My work</Typography>

@@ -13,7 +13,7 @@ export type TechStackProps = {
   className?: string;
 };
 
-export default function TechStackFragment({ className }: TechStackProps) {
+export default function TechStack({ className }: TechStackProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>Tech stack</Typography>

@@ -85,5 +85,26 @@
       "description": "Am lucrat într-un mediu multicultural, cu o echipă diversă, formată din români și finlandezi. Am ajutat la îmbunătățirea și menținerea unui instrument intern, utilizat de management pentru crearea, gestionarea si urmarirea de KPI. Cu ajutorul meu, instrumentul intern a primit un UI nou si modern, împreună cu îmbunătățiri majore de UX.",
       "link": "https://www.nokia.com/"
     }
+  },
+  "contact": {
+    "header": "Contacteaza-mă",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@gamail.com",
+        "description": "Email-ul tău"
+      },
+      "fullName": {
+        "label": "Nume complet",
+        "placeholder": "John Doe",
+        "description": "Numele tău complet"
+      },
+      "message": {
+        "label": "Mesaj",
+        "placeholder": "Salut, Mircea! ...",
+        "description": "Mesajul tău"
+      },
+      "submit": "Trimite"
+    }
   }
 }

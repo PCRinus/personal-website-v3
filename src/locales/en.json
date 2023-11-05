@@ -85,5 +85,26 @@
       "description": "I worked in a multicultural and diverse team, made up of Romanian and Finnish people. I helped in improving and maintaining an internal tool, used by the management for KPI creation, management, and tracking. With my help, the internal tool got a new, modern UI, along with major improvements to the UX.",
       "link": "https://www.nokia.com/"
     }
+  },
+  "contact": {
+    "header": "Contact me",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@gamail.com",
+        "description": "Your email"
+      },
+      "fullName": {
+        "label": "Full name",
+        "placeholder": "John Doe",
+        "description": "Your full name"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Hey Mircea!...",
+        "description": "Your message"
+      },
+      "submit": "Submit"
+    }
   }
 }
