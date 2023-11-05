@@ -1,4 +1,5 @@
 import { ExternalLink, Github, Linkedin } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 import ContactFragment from '@/components/homepage/contact-fragment';
 import MyWorkFragment from '@/components/homepage/my-work-fragment';
@@ -6,9 +7,11 @@ import TechStackFragment from '@/components/homepage/tech-stack-fragment';
 import { Typography } from '@/components/ui/typography';
 
 export default function Home() {
+  const t = useTranslations('common');
+
   return (
     <div className="flex flex-col gap-4">
-      <Typography variant={'h1'}>Mircea Casapu</Typography>
+      <Typography variant={'h1'}>{t('name')}</Typography>
       <Typography className="text-lg font-light" variant={'h2'}>
         Senior Full Stack Engineer at{' '}
         <a href="https://www.doctari.ro/" target="_blank">

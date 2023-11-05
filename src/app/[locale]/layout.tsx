@@ -1,9 +1,11 @@
 import { GeistSans } from 'geist/font';
 import type { Metadata } from 'next';
-
 import './globals.css';
+import { notFound } from 'next/navigation';
+
 import Footer from '@/components/footer';
 import { ThemeProvider } from '@/components/theme-provider';
+import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -11,9 +13,18 @@ export const metadata: Metadata = {
   description: 'Personal website',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  const isValidLocale = locales.some((cur) => cur === locale);
+  if (!isValidLocale) notFound();
+
   return (
-    <html lang="en" className="px-6 py-8">
+    <html lang={locale} className="px-6 py-8">
       <body
         className={cn(
           GeistSans.className,
