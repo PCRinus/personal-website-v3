@@ -1,27 +1,27 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink } from "lucide-react";
 
-import { Badge } from '../ui/badge';
-import { Typography } from '../ui/typography';
+import { Badge } from "../ui/badge";
+import { Typography } from "../ui/typography";
 
-export default function Doctari() {
+export default function UnifiedPost() {
   return (
     <div className="flex flex-col gap-3">
       <div>
-        <div>
-          <Typography variant={'p'} className="font-semibold text-slate-300">
-            Sept 2022 - present
-          </Typography>
-          <Typography variant={'p'} className="font-medium text-slate-300">
-            Full time · Remote
-          </Typography>
-        </div>
-
-        <Typography variant={'h3'}>Senior Full Stack Engineer</Typography>
+        <Typography variant={'h3'}>Full Stack Engineer</Typography>
 
         <Typography variant={'h4'}>
-          <a href="https://www.doctari.ro/" target="_blank">
-            doctari <ExternalLink className="mb-1 inline-flex h-4 w-4 self-center" />
+          <a href="https://www.unifiedpostgroup.com/" target="_blank">
+            UnifiedPost <ExternalLink className="mb-1 inline-flex h-4 w-4 self-center" />
           </a>
+        </Typography>
+      </div>
+
+      <div>
+        <Typography variant={'p'} className="font-semibold text-slate-300">
+          Sept 2021 - Dec 2021
+        </Typography>
+        <Typography variant={'p'} className="font-medium text-slate-300">
+          Contract · Remote
         </Typography>
       </div>
 

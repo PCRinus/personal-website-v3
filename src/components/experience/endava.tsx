@@ -11,7 +11,7 @@ export default function Endava() {
 
         <Typography variant={'h4'}>
           <a href="https://www.endava.com/en/" target="_blank">
-            Endava <ExternalLink className="mb-1 inline-flex h-5 w-5 self-center" />
+            Endava <ExternalLink className="mb-1 inline-flex h-4 w-4 self-center" />
           </a>
         </Typography>
       </div>
