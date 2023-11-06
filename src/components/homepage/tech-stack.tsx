@@ -18,27 +18,23 @@ export default function TechStack({ className }: TechStackProps) {
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>Tech stack</Typography>
 
-      <Card className="bg-inherit dark:text-white">
+      <Card className="bg-inherit">
         <CardHeader className="gap-2">
           <CardTitle className="flex items-center gap-4">
             <Image src={tsLogo} alt="Typescript logo" width={32} height={32} />
             Typescript
           </CardTitle>
-          <CardDescription className="text-white">
-            My current language of choice when building any web application
-          </CardDescription>
+          <CardDescription>My current language of choice when building any web application</CardDescription>
         </CardHeader>
       </Card>
 
-      <Card className="bg-inherit dark:text-white">
+      <Card className="bg-inherit">
         <CardHeader>
           <CardTitle className="flex items-center gap-4">
             <Image src={nodejsLogo} alt="Node.js logo" width={32} height={32} />
             Node.js
           </CardTitle>
-          <CardDescription className="text-white">
-            My preferred backend runtime when building full stack applications
-          </CardDescription>
+          <CardDescription>My preferred backend runtime when building full stack applications</CardDescription>
         </CardHeader>
       </Card>
 

@@ -1,9 +1,11 @@
 import { GeistSans } from 'geist/font';
 import './globals.css';
 import { notFound } from 'next/navigation';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslator } from 'next-intl/server';
 
 import Footer from '@/components/footer';
+import Header from '@/components/header/header';
 import { ThemeProvider } from '@/components/theme-provider';
 import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
@@ -27,18 +29,23 @@ export default function RootLayout({
   const isValidLocale = locales.some((cur) => cur === locale);
   if (!isValidLocale) notFound();
 
+  const translations = useMessages();
+
   return (
-    <html lang={locale} className="px-6 py-8">
+    <html lang={locale}>
       <body
         className={cn(
           GeistSans.className,
-          'flex flex-col bg-gradient-to-br from-violet-800 via-blue-900 to-gray-900 bg-no-repeat dark:text-slate-200',
+          'flex flex-col bg-gradient-to-b from-orange-300 via-orange-100 to-zinc-200 bg-no-repeat dark:bg-gradient-to-b dark:from-violet-800 dark:via-blue-900 dark:to-gray-900 dark:text-slate-200',
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <NextIntlClientProvider locale={locale} messages={translations}>
+          <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
+            <Header />
+            <main className="flex-1 px-6 py-4">{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

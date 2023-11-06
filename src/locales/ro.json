@@ -4,6 +4,11 @@
     "current-job": "Inginer Full Stack Senior",
     "current-employer": "doctari"
   },
+  "theme-toggle": {
+    "dark": "Întunecat",
+    "light": "Luminos",
+    "system": "Sistem"
+  },
   "home": {
     "metadata": {
       "title": "Mircea Casapu | Acasă",

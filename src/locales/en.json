@@ -4,6 +4,11 @@
     "current-job": "Senior Full Stack",
     "current-employer": "doctari"
   },
+  "theme-toggle": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
   "home": {
     "metadata": {
       "title": "Mircea Casapu | Home",
