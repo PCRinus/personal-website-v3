@@ -1,5 +1,5 @@
 import { ExternalLink, Github, Linkedin } from 'lucide-react';
-import {  useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 import Contact from '@/components/homepage/contact';
 import MyWork from '@/components/homepage/my-work';
@@ -22,14 +22,18 @@ export default function Home() {
       <Typography variant={'p'}>{t('content')}</Typography>
 
       <div className="mt-4 flex gap-6">
-        <Github />
-        <Linkedin />
+        <a href="https://github.com/PCRinus" target="_blank">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+          <Linkedin />
+        </a>
       </div>
 
       <TechStack className="mt-4" />
 
       <MyWork className="mt-4" />
-        <Contact className="mt-4" />
+      <Contact className="mt-4" />
     </div>
   );
 }
