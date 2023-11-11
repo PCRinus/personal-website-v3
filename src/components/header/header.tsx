@@ -10,10 +10,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 flex items-center justify-end bg-background/15 px-6 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/15">
-        <div>
-          <ThemeToggle />
-        </div>
+      <header className="bg-background/15 supports-[backdrop-filter]:bg-background/15 sticky top-0 flex items-center justify-end px-6 py-4 backdrop-blur">
+        <ThemeToggle />
       </header>
 
       <Drawer isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
