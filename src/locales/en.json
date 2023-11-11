@@ -9,6 +9,10 @@
     "light": "Light",
     "system": "System"
   },
+  "language-toggle": {
+    "en": "English",
+    "ro": "Romanian"
+  },
   "home": {
     "metadata": {
       "title": "Mircea Casapu | Home",

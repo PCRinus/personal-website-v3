@@ -9,6 +9,10 @@
     "light": "Luminos",
     "system": "Sistem"
   },
+  "language-toggle": {
+    "ro": "Română",
+    "en": "Engleză"
+  },
   "home": {
     "metadata": {
       "title": "Mircea Casapu | Acasă",
