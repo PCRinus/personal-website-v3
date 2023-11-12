@@ -20,14 +20,16 @@
     },
     "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor."
   },
+  "my-work": {
+    "header": "Experiență",
+    "see-more": "Vezi mai multe"
+  },
   "experience": {
     "metadata": {
       "title": "Mircea Casapu | Experiență",
       "description": "Experiență profesională"
     },
-    "content": {
-      "experience": "Experiență"
-    },
+    "header": "Experiență",
     "tags": {
       "typescript": "Typescript",
       "javascript": "Javascript",

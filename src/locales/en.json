@@ -20,14 +20,16 @@
     },
     "content": "I am a product oriented developer who builds web applications and products that help businesses and start-ups deliver value to their customers."
   },
+  "my-work": {
+    "header": "My work",
+    "see-more": "See more"
+  },
   "experience": {
     "metadata": {
       "title": "Mircea Casapu | Experience",
       "description": "Professional experience"
     },
-    "content": {
-      "experience": "Experience"
-    },
+    "header": "Experience",
     "tags": {
       "typescript": "Typescript",
       "javascript": "Javascript",

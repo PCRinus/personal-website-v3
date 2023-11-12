@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { ReactNode } from 'react';
 
 import Doctari from '@/components/experience/jobs/doctari';
@@ -19,9 +20,11 @@ export type ExperienceData = {
 };
 
 export default function Experience() {
+  const t = useTranslations('experience');
+
   return (
     <div className="flex flex-col gap-12">
-      <Typography variant={'h1'}>My work</Typography>
+      <Typography variant={'h1'}>{t('header')}</Typography>
 
       <Doctari />
       <Endava />
