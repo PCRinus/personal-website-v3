@@ -95,6 +95,16 @@
       "link": "https://www.nokia.com/"
     }
   },
+  "freelance": {
+    "header": "Freelance",
+    "see-more": "See more",
+    "looties": {
+      "title": "Looties",
+      "content-card": {
+        "description": "<strong>looties</strong> is a brand new NFT game and marketplace built on the Solana blockchain where ou can win and trade your NFTs"
+      }
+    }
+  },
   "contact": {
     "header": "Contact me",
     "form": {

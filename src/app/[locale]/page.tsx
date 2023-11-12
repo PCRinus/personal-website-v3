@@ -2,7 +2,7 @@ import { ExternalLink, Github, Linkedin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import Contact from '@/components/homepage/contact';
-import MyWork from '@/components/homepage/my-work';
+import MyWork from '@/components/homepage/freelance';
 import TechStack from '@/components/homepage/tech-stack';
 import { Typography } from '@/components/ui/typography';
 

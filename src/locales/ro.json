@@ -95,6 +95,16 @@
       "link": "https://www.nokia.com/"
     }
   },
+  "freelance": {
+    "header": "Freelance",
+    "see-more": "Vezi mai multe",
+    "looties": {
+      "title": "Looties",
+      "content-card": {
+        "description": "<strong>Looties</strong> este un nou joc cu NFT-uri care include o piață construită pe blockchain-ul Solana, unde poți tranzacționa NFT-urile câștigate."
+      }
+    }
+  },
   "contact": {
     "header": "Contacteaza-mă",
     "form": {
