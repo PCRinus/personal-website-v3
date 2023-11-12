@@ -137,5 +137,8 @@
       },
       "submit": "Trimite"
     }
+  },
+  "footer": {
+    "text": "Construit cu <tailwind>TailwindCSS</tailwind> și <nextjs>Next.js</nextjs> cu ❤️. Implementat și găzduit pe <vercel>Vercel</vercel>."
   }
 }

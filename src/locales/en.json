@@ -137,5 +137,8 @@
       },
       "submit": "Submit"
     }
+  },
+  "footer": {
+    "text": "Built with <tailwind>TailwindCSS</tailwind> and <nextjs>Next.js</nextjs> with ❤️. Deployed and hosted on <vercel>Vercel</vercel>."
   }
 }
