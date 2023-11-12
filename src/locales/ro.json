@@ -96,8 +96,18 @@
     }
   },
   "freelance": {
+    "metadata": {
+      "title": "Mircea Casapu | Freelance",
+      "description": "Proiectele mele de freelancing"
+    },
     "header": "Freelance",
     "see-more": "Vezi mai multe",
+    "rcmp": {
+      "title": "RCMP - Research Center Management Portal",
+      "content-card": {
+        "description": "<strong>RCMP</strong> este o platformă creată pentru <strong>UPT</strong> cu scopul de a gestiona și comercializa centrele lor de cercetare, împreună cu serviciile furnizate de acestea"
+      }
+    },
     "looties": {
       "title": "Looties",
       "content-card": {
@@ -110,7 +120,7 @@
     "form": {
       "email": {
         "label": "Email",
-        "placeholder": "john.doe@gamail.com",
+        "placeholder": "john.doe@gmail.com",
         "description": "Email-ul tău"
       },
       "fullName": {

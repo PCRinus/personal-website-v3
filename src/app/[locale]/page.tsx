@@ -2,8 +2,9 @@ import { ExternalLink, Github, Linkedin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import Contact from '@/components/homepage/contact';
-import MyWork from '@/components/homepage/freelance';
-import TechStack from '@/components/homepage/tech-stack';
+import Freelance from '@/components/homepage/freelance';
+// import TechStack from '@/components/homepage/tech-stack';
+import MyWork from '@/components/homepage/my-work';
 import { Typography } from '@/components/ui/typography';
 
 export default function Home() {
@@ -30,9 +31,10 @@ export default function Home() {
         </a>
       </div>
 
-      <TechStack className="mt-4" />
+      {/* <TechStack className="mt-4" /> */}
 
       <MyWork className="mt-4" />
+      <Freelance className="mt-4" />
       <Contact className="mt-4" />
     </div>
   );

@@ -96,8 +96,18 @@
     }
   },
   "freelance": {
+    "metadata": {
+      "title": "Mircea Casapu | Freelance",
+      "description": "My freelance work"
+    },
     "header": "Freelance",
     "see-more": "See more",
+    "rcmp": {
+      "title": "RCMP - Research Center Management Portal",
+      "content-card": {
+        "description": "<strong>RCMP</strong> (Research Center Management Platform) is a platform built for <strong>UPT</strong> to manage and market their research centers, alongside the services they provide"
+      }
+    },
     "looties": {
       "title": "Looties",
       "content-card": {
