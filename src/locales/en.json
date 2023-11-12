@@ -123,17 +123,23 @@
       "email": {
         "label": "Email",
         "placeholder": "john.doe@gamail.com",
-        "description": "Your email"
+        "description": "Your email",
+        "errors": {
+          "required": "Email is required",
+          "valid": "Please enter a valid email address"
+        }
       },
       "fullName": {
         "label": "Full name",
         "placeholder": "John Doe",
-        "description": "Your full name"
+        "description": "Your full name",
+        "error": "Full name is required"
       },
       "message": {
         "label": "Message",
         "placeholder": "Hey Mircea!...",
-        "description": "Your message"
+        "description": "Your message",
+        "error": "Message is required"
       },
       "submit": "Submit"
     }

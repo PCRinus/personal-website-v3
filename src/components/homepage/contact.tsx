@@ -17,14 +17,18 @@ type ContactFragmentProps = {
   className?: string;
 };
 
-const formSchema = z.object({
-  email: z.string().email(),
-  fullName: z.string().min(3),
-  message: z.string().min(10),
-});
-
 export default function Contact({ className }: ContactFragmentProps) {
   const t = useTranslations('contact');
+
+  const formSchema = z.object({
+    email: z
+      .string()
+      .min(1, { message: t('form.email.errors.required') })
+      .email({ message: t('form.email.errors.valid') }),
+    fullName: z.string().min(3, { message: t('form.fullName.error') }),
+    message: z.string().min(10, { message: t('form.message.error') }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,54 +48,52 @@ export default function Contact({ className }: ContactFragmentProps) {
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>{t('header')}</Typography>
 
-      <div>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-black">
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white">{t('form.email.label')}</FormLabel>
-                  <FormControl>
-                    <Input placeholder={t('form.email.placeholder')} {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-black dark:text-slate-200">
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-white">{t('form.email.label')}</FormLabel>
+                <FormControl>
+                  <Input placeholder={t('form.email.placeholder')} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-            <FormField
-              control={form.control}
-              name="fullName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white">{t('form.fullName.label')}</FormLabel>
-                  <FormControl>
-                    <Input placeholder={t('form.fullName.placeholder')} {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+          <FormField
+            control={form.control}
+            name="fullName"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-white">{t('form.fullName.label')}</FormLabel>
+                <FormControl>
+                  <Input placeholder={t('form.fullName.placeholder')} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white">{t('form.message.label')}</FormLabel>
-                  <FormControl>
-                    <Textarea placeholder={t('form.message.placeholder')} {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit">{t('form.submit')}</Button>
-          </form>
-        </Form>
-      </div>
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-white">{t('form.message.label')}</FormLabel>
+                <FormControl>
+                  <Textarea placeholder={t('form.message.placeholder')} {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit">{t('form.submit')}</Button>
+        </form>
+      </Form>
     </div>
   );
 }
