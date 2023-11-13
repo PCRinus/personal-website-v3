@@ -141,7 +141,8 @@
         "description": "Your message",
         "error": "Message is required"
       },
-      "submit": "Submit"
+      "submit": "Submit",
+      "success": "Message sent successfully"
     }
   },
   "footer": {

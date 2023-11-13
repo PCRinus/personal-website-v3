@@ -3,7 +3,7 @@
 import { useForm as useFormspree } from '@formspree/react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -21,8 +21,8 @@ type ContactFragmentProps = {
 
 export default function Contact({ className }: ContactFragmentProps) {
   const t = useTranslations('contact');
-
   const [serverState, sendToFormspree] = useFormspree(process.env.NEXT_PUBLIC_FORMSPREE_KEY ?? '');
+  const [submitted, setSubmitted] = useState(false);
 
   const formSchema = z.object({
     email: z
@@ -45,6 +45,7 @@ export default function Contact({ className }: ContactFragmentProps) {
   useEffect(() => {
     if (serverState.succeeded) {
       form.reset();
+      setSubmitted(true);
     }
   }, [serverState, form]);
 
@@ -98,6 +99,12 @@ export default function Contact({ className }: ContactFragmentProps) {
           <Button type="submit" disabled={!!Object.keys(form.formState.errors).length || serverState.submitting}>
             {t('form.submit')}
           </Button>
+
+          {submitted && (
+            <Typography variant="p" className="dark:text-slate-200">
+              {t('form.success')}
+            </Typography>
+          )}
         </form>
       </Form>
     </div>
