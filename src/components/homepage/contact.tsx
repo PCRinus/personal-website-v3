@@ -1,7 +1,9 @@
 'use client';
 
+import { useForm as useFormspree } from '@formspree/react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -19,6 +21,8 @@ type ContactFragmentProps = {
 
 export default function Contact({ className }: ContactFragmentProps) {
   const t = useTranslations('contact');
+
+  const [serverState, sendToFormspree] = useFormspree(process.env.NEXT_PUBLIC_FORMSPREE_KEY ?? '');
 
   const formSchema = z.object({
     email: z
@@ -38,18 +42,18 @@ export default function Contact({ className }: ContactFragmentProps) {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  useEffect(() => {
+    if (serverState.succeeded) {
+      form.reset();
+    }
+  }, [serverState, form]);
 
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>{t('header')}</Typography>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 text-black dark:text-slate-200">
+        <form onSubmit={form.handleSubmit(sendToFormspree)} className="space-y-4 text-black dark:text-slate-200">
           <FormField
             control={form.control}
             name="email"
@@ -91,7 +95,9 @@ export default function Contact({ className }: ContactFragmentProps) {
               </FormItem>
             )}
           />
-          <Button type="submit">{t('form.submit')}</Button>
+          <Button type="submit" disabled={!!Object.keys(form.formState.errors).length || serverState.submitting}>
+            {t('form.submit')}
+          </Button>
         </form>
       </Form>
     </div>

@@ -1,4 +1,4 @@
-import { GeistSans } from 'geist/font';
+import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
@@ -7,6 +7,7 @@ import { getTranslator } from 'next-intl/server';
 import Footer from '@/components/footer';
 import Header from '@/components/header/header';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from '@/components/ui/toaster';
 import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
 
@@ -43,6 +44,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
             <Header />
             <main className="flex-1 px-6 py-4">{children}</main>
+            <Toaster />
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
