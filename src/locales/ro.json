@@ -24,33 +24,40 @@
     "header": "Experiență",
     "see-more": "Vezi mai multe"
   },
+  "technologies": {
+    "typescript": "Typescript",
+    "javascript": "Javascript",
+    "nodejs": "Node.js",
+    "react": "React",
+    "tailwind": "Tailwind",
+    "aws": "AWS - Amazon Web Platform",
+    "nestjs": "Nest.js",
+    "microservices": "Microservices",
+    "graphql": "GraphQL",
+    "gcp": "GCP - Google Cloud Platform",
+    "c-sharp": "C#",
+    "dotnet": ".NET",
+    "dotnet-framework": ".NET Framework",
+    "ms-sql-server": "Microsoft SQL Server",
+    "jquery": "jQuery",
+    "php": "PHP",
+    "symfony": "Symfony",
+    "mariadb": "MariaDb",
+    "mysql": "MySQL",
+    "angular": "Angular",
+    "ruby-on-rails": "Ruby on Rails",
+    "postgres": "PostgreSQL",
+    "digital-ocean": "Digital Ocean",
+    "docker": "Docker",
+    "solana": "Solana",
+    "web3": "Web3"
+  },
   "experience": {
     "metadata": {
       "title": "Mircea Casapu | Experiență",
       "description": "Experiență profesională"
     },
     "header": "Experiență",
-    "tags": {
-      "typescript": "Typescript",
-      "javascript": "Javascript",
-      "nodejs": "Node.js",
-      "react": "React",
-      "tailwind": "Tailwind",
-      "aws": "AWS - Amazon Web Platform",
-      "nestjs": "Nest.js",
-      "microservices": "Microservices",
-      "graphql": "GraphQL",
-      "gcp": "GCP - Google Cloud Platform",
-      "dotnet-framework": ".NET Framework",
-      "ms-sql-server": "Microsoft SQL Server",
-      "jquery": "jQuery",
-      "php": "PHP",
-      "symfony": "Symfony",
-      "mariadb": "MariaDb",
-      "angular": "Angular",
-      "ruby-on-rails": "Ruby on Rails",
-      "postgres": "PostgreSQL"
-    },
     "doctari": {
       "title": "Inginer Full Stack Senior",
       "company": "doctari",
@@ -108,13 +115,17 @@
       "title": "RCMP - Research Center Management Portal",
       "content-card": {
         "description": "<strong>RCMP</strong> este o platformă creată pentru <strong>UPT</strong> cu scopul de a gestiona și comercializa centrele lor de cercetare, împreună cu serviciile furnizate de acestea"
-      }
+      },
+      "description": "Looties este un nou joc Web3 care oferă o varietate de lootbox-uri cu NFT-uri, din care jucătorii au șansa de a câștiga NFT-uri, pe care le pot vinde mai apoi pe exchange-uri de NFT-uri. <br></br> <br></br> Am contribuit în principal pe partea de backend, unde am configurat REST API-ul, am dockerzied aplicația și am scris pipeline-urile pentru testarea, construirea și deployment-ul containerului Docker.",
+      "period": "Nov 2022 - Sept 2023"
     },
     "looties": {
       "title": "Looties",
       "content-card": {
         "description": "<strong>Looties</strong> este un nou joc cu NFT-uri care include o piață construită pe blockchain-ul Solana, unde poți tranzacționa NFT-urile câștigate."
-      }
+      },
+      "description": "Looties este un nou joc Web3 care oferă o varietate de lootbox-uri cu NFT-uri, din care jucătorii au șansa de a câștiga NFT-uri, pe care le pot vinde mai apoi pe exchange-uri de NFT-uri. <br></br> <br></br> Am contribuit în principal pe partea de backend, unde am configurat REST API-ul, am dockerzied aplicația și am scris pipeline-urile pentru testarea, construirea și deployment-ul containerului Docker.",
+      "period": "Apr 2023 - Iul 2023"
     }
   },
   "contact": {

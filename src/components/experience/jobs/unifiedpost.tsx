@@ -6,7 +6,7 @@ import ExperienceTemplate from "../experience-template";
 
 export default function UnifiedPost() {
   const t = useTranslations('experience.unifiedpost');
-  const tags = useTranslations('experience.tags');
+  const tags = useTranslations('technologies');
   const keys = ['angular', 'typescript', 'ruby-on-rails', 'postgres', 'gcp'] as const;
 
   return (

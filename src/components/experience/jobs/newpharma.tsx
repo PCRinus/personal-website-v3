@@ -4,7 +4,7 @@ import ExperienceTemplate from '../experience-template';
 
 export default function Newpharma() {
   const t = useTranslations('experience.newpharma');
-  const tags = useTranslations('experience.tags');
+  const tags = useTranslations('technologies');
   const keys = ['php', 'symfony', 'mariadb', 'jquery'] as const;
 
   return (

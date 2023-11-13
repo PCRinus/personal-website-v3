@@ -4,7 +4,7 @@ import ExperienceTemplate from '../experience-template';
 
 export default function Endava() {
   const t = useTranslations('experience.endava');
-  const tags = useTranslations('experience.tags');
+  const tags = useTranslations('technologies');
   const keys = ['typescript', 'javascript', 'nodejs', 'aws', 'nestjs', 'microservices', 'graphql', 'gcp'] as const;
 
   return (

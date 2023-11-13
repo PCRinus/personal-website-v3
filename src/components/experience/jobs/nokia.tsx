@@ -4,7 +4,7 @@ import ExperienceTemplate from "../experience-template";
 
 export default function Nokia() {
   const t = useTranslations('experience.nokia');
-  const tags = useTranslations('experience.tags');
+  const tags = useTranslations('technologies');
   const keys = ['javascript', 'jquery', 'dotnet-framework', 'ms-sql-server'] as const;
 
   return (

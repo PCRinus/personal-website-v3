@@ -4,7 +4,7 @@ import ExperienceTemplate from '../experience-template';
 
 export default function Doctari() {
   const t = useTranslations('experience.doctari');
-  const tags = useTranslations('experience.tags');
+  const tags = useTranslations('technologies');
   const keys = ['typescript', 'javascript', 'nodejs', 'react', 'tailwind', 'aws'] as const;
 
   return (

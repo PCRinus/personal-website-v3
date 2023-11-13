@@ -24,33 +24,40 @@
     "header": "My work",
     "see-more": "See more"
   },
+  "technologies": {
+    "typescript": "Typescript",
+    "javascript": "Javascript",
+    "nodejs": "Node.js",
+    "react": "React",
+    "tailwind": "Tailwind",
+    "aws": "AWS - Amazon Web Platform",
+    "nestjs": "Nest.js",
+    "microservices": "Microservices",
+    "graphql": "GraphQL",
+    "gcp": "GCP - Google Cloud Platform",
+    "c-sharp": "C#",
+    "dotnet": ".NET",
+    "dotnet-framework": ".NET Framework",
+    "ms-sql-server": "Microsoft SQL Server",
+    "jquery": "jQuery",
+    "php": "PHP",
+    "symfony": "Symfony",
+    "mariadb": "MariaDb",
+    "mysql": "MySQL",
+    "angular": "Angular",
+    "ruby-on-rails": "Ruby on Rails",
+    "postgres": "PostgreSQL",
+    "digital-ocean": "Digital Ocean",
+    "docker": "Docker",
+    "solana": "Solana",
+    "web3": "Web3"
+  },
   "experience": {
     "metadata": {
       "title": "Mircea Casapu | Experience",
       "description": "Professional experience"
     },
     "header": "Experience",
-    "tags": {
-      "typescript": "Typescript",
-      "javascript": "Javascript",
-      "nodejs": "Node.js",
-      "react": "React",
-      "tailwind": "Tailwind",
-      "aws": "AWS - Amazon Web Platform",
-      "nestjs": "Nest.js",
-      "microservices": "Microservices",
-      "graphql": "GraphQL",
-      "gcp": "GCP - Google Cloud Platform",
-      "dotnet-framework": ".NET Framework",
-      "ms-sql-server": "Microsoft SQL Server",
-      "jquery": "jQuery",
-      "php": "PHP",
-      "symfony": "Symfony",
-      "mariadb": "MariaDb",
-      "angular": "Angular",
-      "ruby-on-rails": "Ruby on Rails",
-      "postgres": "PostgreSQL"
-    },
     "doctari": {
       "title": "Senior Full Stack Developer",
       "company": "doctari",
@@ -108,13 +115,17 @@
       "title": "RCMP - Research Center Management Portal",
       "content-card": {
         "description": "<strong>RCMP</strong> (Research Center Management Platform) is a platform built for <strong>UPT</strong> to manage and market their research centers, alongside the services they provide"
-      }
+      },
+      "description": "",
+      "period": "Nov 2022 - Sept 2023"
     },
     "looties": {
       "title": "Looties",
       "content-card": {
         "description": "<strong>looties</strong> is a brand new NFT game and marketplace built on the Solana blockchain where ou can win and trade your NFTs"
-      }
+      },
+      "description": "looties is a new Web3 game that offers a variety of NFT loot boxes that have the chance of dropping highly collectible NFTs. <br></br> <br></br> I have mainly contributed to the backend, where I have set up the REST API, dockerzied the application, and wrote our deployment pipeline for testing, building and deploying the Docker container",
+      "period": "Apr 2023 - Jul 2023"
     }
   },
   "contact": {
