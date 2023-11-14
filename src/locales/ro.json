@@ -120,7 +120,7 @@
       "content-card": {
         "description": "<strong>RCMP</strong> este o platformă creată pentru <strong>UPT</strong> cu scopul de a gestiona și comercializa centrele lor de cercetare, împreună cu serviciile furnizate de acestea"
       },
-      "description": "Looties este un nou joc Web3 care oferă o varietate de lootbox-uri cu NFT-uri, din care jucătorii au șansa de a câștiga NFT-uri, pe care le pot vinde mai apoi pe exchange-uri de NFT-uri. <br></br> <br></br> Am contribuit în principal pe partea de backend, unde am configurat REST API-ul, am dockerzied aplicația și am scris pipeline-urile pentru testarea, construirea și deployment-ul containerului Docker.",
+      "description": "RCMP este o platformă menită să ușureze descoperirea centrelor de cercetare disponibile, laboratoarelor, serviciilor și echipamentelor oferite de UPT, oferind în același timp și opțiunea de rezervare/închiriere a facilitaților și serviciilor oferite de centrele de cercetare. Întreaga aplicație a fost proiectată și executată de mine, de la arhitectură, la deployment.",
       "period": "Nov 2022 - Sept 2023"
     },
     "looties": {

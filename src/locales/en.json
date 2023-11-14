@@ -120,7 +120,7 @@
       "content-card": {
         "description": "<strong>RCMP</strong> (Research Center Management Platform) is a platform built for <strong>UPT</strong> to manage and market their research centers, alongside the services they provide"
       },
-      "description": "",
+      "description":"RCMP is a platform meant to ease the discovery of available research centers, laboratories, services, and equipment offered by UPT, while also offering the option of reserving/renting the facilities and services offered by UPT's research centers. The whole app was architected and executed by me, including the front-end, the back-end, and the deployment.",
       "period": "Nov 2022 - Sept 2023"
     },
     "looties": {
