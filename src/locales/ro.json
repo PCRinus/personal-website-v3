@@ -18,7 +18,6 @@
       "title": "Mircea Casapu | Acasă",
       "description": "Website și portofoliu personal"
     },
-    "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor.",
     "buttons": {
       "github": "GitHub",
       "linkedin": "LinkedIn"
@@ -26,6 +25,7 @@
   },
   "my-work": {
     "header": "Experiență",
+    "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor.",
     "see-more": "Vezi mai multe"
   },
   "technologies": {

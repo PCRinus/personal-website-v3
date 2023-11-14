@@ -14,14 +14,15 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-4">
-      <Typography variant={'h1'}>{commonTranslations('name')}</Typography>
+      <Typography className="bg-gradient-to-r from-pink-600 to-violet-600 bg-clip-text text-transparent" variant={'h1'}>
+        {commonTranslations('name')}
+      </Typography>
       <Typography className="text-lg font-light" variant={'h2'}>
         {`${commonTranslations('current-job')} `}
         <a href="https://www.doctari.ro/" target="_blank">
           {commonTranslations('current-employer')} <ExternalLink className="mb-1 inline-flex h-4 w-4 self-center" />
         </a>
       </Typography>
-      <Typography variant={'p'}>{t('content')}</Typography>
 
       <div className="flex gap-4">
         <a className="flex grow" href="https://github.com/PCRinus" target="_blank">

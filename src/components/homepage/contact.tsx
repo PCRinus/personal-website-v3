@@ -60,7 +60,7 @@ export default function Contact({ className }: ContactFragmentProps) {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">{t('form.email.label')}</FormLabel>
+                <FormLabel>{t('form.email.label')}</FormLabel>
                 <FormControl>
                   <Input placeholder={t('form.email.placeholder')} {...field} />
                 </FormControl>
@@ -74,7 +74,7 @@ export default function Contact({ className }: ContactFragmentProps) {
             name="fullName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">{t('form.fullName.label')}</FormLabel>
+                <FormLabel>{t('form.fullName.label')}</FormLabel>
                 <FormControl>
                   <Input placeholder={t('form.fullName.placeholder')} {...field} />
                 </FormControl>
@@ -88,7 +88,7 @@ export default function Contact({ className }: ContactFragmentProps) {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">{t('form.message.label')}</FormLabel>
+                <FormLabel>{t('form.message.label')}</FormLabel>
                 <FormControl>
                   <Textarea placeholder={t('form.message.placeholder')} {...field} />
                 </FormControl>
