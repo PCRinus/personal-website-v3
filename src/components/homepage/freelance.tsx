@@ -21,7 +21,7 @@ export default function Freelance({ className }: FreelanceProps) {
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>{t('header')}</Typography>
 
-      <Card className="bg-inherit dark:border-slate-200 dark:text-slate-200">
+      <Card className="border border-input bg-background dark:border-slate-200 dark:text-slate-200">
         <CardHeader className="gap-2">
           <CardTitle className="flex items-center gap-3">
             <Image src={rcmp} alt="RCMP logo" width={32} height={32} />
@@ -35,7 +35,7 @@ export default function Freelance({ className }: FreelanceProps) {
         </CardContent>
       </Card>
 
-      <Card className="bg-inherit dark:border-slate-200 dark:text-slate-200">
+      <Card className="border border-[] bg-background dark:border-slate-200 dark:text-slate-200">
         <CardHeader className="gap-2">
           <CardTitle className="flex items-center gap-3">
             <Image src={looties} alt="looties logo" width={96} height={32} />

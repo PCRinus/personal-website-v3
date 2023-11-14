@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={cn(
           GeistSans.className,
-          'flex flex-col bg-gradient-to-b from-orange-300 via-orange-100 to-zinc-200 bg-no-repeat dark:bg-gradient-to-b dark:from-violet-800 dark:via-blue-900 dark:to-gray-900 dark:text-slate-200',
+          'flex flex-col bg-zinc-200 bg-no-repeat dark:bg-[#0e1019] dark:text-slate-200',
         )}
       >
         <NextIntlClientProvider locale={locale} messages={translations}>

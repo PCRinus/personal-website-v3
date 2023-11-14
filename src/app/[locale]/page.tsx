@@ -5,6 +5,7 @@ import Contact from '@/components/homepage/contact';
 import Freelance from '@/components/homepage/freelance';
 // import TechStack from '@/components/homepage/tech-stack';
 import MyWork from '@/components/homepage/my-work';
+import { Button } from '@/components/ui/button';
 import { Typography } from '@/components/ui/typography';
 
 export default function Home() {
@@ -22,12 +23,18 @@ export default function Home() {
       </Typography>
       <Typography variant={'p'}>{t('content')}</Typography>
 
-      <div className="mt-4 flex gap-6">
-        <a href="https://github.com/PCRinus" target="_blank">
-          <Github />
+      <div className="flex gap-4">
+        <a className="flex grow" href="https://github.com/PCRinus" target="_blank">
+          <Button type="button" variant={'default'} className="flex grow gap-2 text-lg">
+            <Github />
+            {t('buttons.github')}
+          </Button>
         </a>
-        <a href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
-          <Linkedin />
+        <a className="flex grow" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+          <Button type="button" variant={'default'} className="flex grow gap-2 text-lg">
+            <Linkedin />
+            {t('buttons.linkedin')}
+          </Button>
         </a>
       </div>
 

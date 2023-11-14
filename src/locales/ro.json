@@ -18,7 +18,11 @@
       "title": "Mircea Casapu | Acasă",
       "description": "Website și portofoliu personal"
     },
-    "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor."
+    "content": "Sunt un dezvoltator web orientat spre produs, care creează aplicații web și produse care ajută companiile și start-up-urile să ofere valoare clienților lor.",
+    "buttons": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
   },
   "my-work": {
     "header": "Experiență",
@@ -136,21 +140,21 @@
         "placeholder": "john.doe@gmail.com",
         "description": "Email-ul tău",
         "errors": {
-          "required": "Email-ul este obligatoriu",
-          "valid": "Email-ul trebuie să fie valid"
+          "required": "Email-ul este obligatoriu.",
+          "valid": "Email-ul trebuie să fie valid."
         }
       },
       "fullName": {
         "label": "Nume complet",
         "placeholder": "John Doe",
         "description": "Numele tău complet",
-        "error": "Numele complet este obligatoriu"
+        "error": "Numele complet este obligatoriu."
       },
       "message": {
         "label": "Mesaj",
         "placeholder": "Salut, Mircea! ...",
         "description": "Mesajul tău",
-        "error": "Mesajul este obligatoriu"
+        "error": "Mesajul trebuie sa fie mai lung de 10 caractere."
       },
       "submit": "Trimite",
       "submitted": "Mesajul a fost trimis cu succes"

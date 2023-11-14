@@ -18,7 +18,11 @@
       "title": "Mircea Casapu | Home",
       "description": "Personal website and portfolio"
     },
-    "content": "I am a product oriented developer who builds web applications and products that help businesses and start-ups deliver value to their customers."
+    "content": "I am a product oriented developer who builds web applications and products that help businesses and start-ups deliver value to their customers.",
+    "buttons": {
+      "github": "Github",
+      "linkedin": "LinkedIn"
+    }
   },
   "my-work": {
     "header": "My work",
@@ -125,7 +129,10 @@
         "description": "<strong>looties</strong> is a brand new NFT game and marketplace built on the Solana blockchain where ou can win and trade your NFTs"
       },
       "description": "looties is a new Web3 game that offers a variety of NFT loot boxes that have the chance of dropping highly collectible NFTs. <br></br> <br></br> I have mainly contributed to the backend, where I have set up the REST API, dockerzied the application, and wrote our deployment pipeline for testing, building and deploying the Docker container",
-      "period": "Apr 2023 - Jul 2023"
+      "period": "Apr 2023 - Jul 2023",
+      "features": {
+        "header": "Features"
+      }
     }
   },
   "contact": {
@@ -136,24 +143,24 @@
         "placeholder": "john.doe@gamail.com",
         "description": "Your email",
         "errors": {
-          "required": "Email is required",
-          "valid": "Please enter a valid email address"
+          "required": "Email is required.",
+          "valid": "Please enter a valid email address."
         }
       },
       "fullName": {
         "label": "Full name",
         "placeholder": "John Doe",
         "description": "Your full name",
-        "error": "Full name is required"
+        "error": "Full name is required."
       },
       "message": {
         "label": "Message",
         "placeholder": "Hey Mircea!...",
         "description": "Your message",
-        "error": "Message is required"
+        "error": "Message needs to be longer than 10 characters."
       },
       "submit": "Submit",
-      "success": "Message sent successfully"
+      "success": "Message sent successfully!"
     }
   },
   "footer": {

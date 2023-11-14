@@ -1,12 +1,14 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import { Typography } from './ui/typography';
+import glow from '../../public/glow.svg'
 
 export default function Footer() {
   const t = useTranslations('footer');
 
   return (
-    <footer className="flex flex-shrink-0 items-center px-6 py-4">
+    <footer className="relative flex flex-shrink-0 items-center p-6">
       <Typography variant={'p'} className="text-center">
         {t.rich('text', {
           tailwind: (chunks) => (
@@ -26,6 +28,8 @@ export default function Footer() {
           ),
         })}
       </Typography>
+
+      <Image className='absolute bottom-0 left-0 w-full -z-10' src={glow} alt='footer glow image'/>
     </footer>
   );
 }
