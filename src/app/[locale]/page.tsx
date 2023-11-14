@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 
 import Contact from '@/components/homepage/contact';
 import Freelance from '@/components/homepage/freelance';
-// import TechStack from '@/components/homepage/tech-stack';
 import MyWork from '@/components/homepage/my-work';
 import { Button } from '@/components/ui/button';
 import { Typography } from '@/components/ui/typography';
@@ -18,7 +17,7 @@ export default function Home() {
         {commonTranslations('name')}
       </Typography>
       <Typography className="text-lg font-light" variant={'h2'}>
-        {`${commonTranslations('current-job')} `}
+        {`${commonTranslations('current-job')} • `}
         <a href="https://www.doctari.ro/" target="_blank">
           {commonTranslations('current-employer')} <ExternalLink className="mb-1 inline-flex h-4 w-4 self-center" />
         </a>
@@ -38,8 +37,6 @@ export default function Home() {
           </Button>
         </a>
       </div>
-
-      {/* <TechStack className="mt-4" /> */}
 
       <MyWork className="mt-4" />
       <Freelance className="mt-4" />

@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "Mircea Casapu",
-    "current-job": "Senior Full Stack",
+    "current-job": "Senior Full Stack Developer",
     "current-employer": "doctari"
   },
   "theme-toggle": {
@@ -116,7 +116,7 @@
     "header": "Freelance",
     "see-more": "See more",
     "rcmp": {
-      "title": "RCMP - Research Center Management Portal",
+      "title": "RCMP",
       "content-card": {
         "description": "<strong>RCMP</strong> (Research Center Management Platform) is a platform built for <strong>UPT</strong> to manage and market their research centers, alongside the services they provide"
       },

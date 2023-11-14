@@ -21,10 +21,10 @@ export default function ExperienceTemplate({
     <div className="flex flex-col gap-3">
       <div>
         <div>
-          <Typography variant={'p'} className="font-semibold text-slate-300">
+          <Typography variant={'p'} className="font-semibold">
             {period}
           </Typography>
-          <Typography variant={'p'} className="font-medium text-slate-300">
+          <Typography variant={'p'} className="font-medium">
             {type} · {location}
           </Typography>
         </div>
@@ -38,9 +38,7 @@ export default function ExperienceTemplate({
         </Typography>
       </div>
 
-      <Typography variant={'p'} className="text-slate-300">
-        {description}
-      </Typography>
+      <Typography variant={'p'}>{description}</Typography>
 
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (

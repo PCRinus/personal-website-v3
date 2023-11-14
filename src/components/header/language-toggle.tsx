@@ -1,5 +1,3 @@
-'use-client';
-
 import { Languages } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next-intl/client';
