@@ -15,7 +15,7 @@ export type ExperienceData = {
   type?: string;
   location?: string;
   description: string | ReactNode;
-  link?: string
+  link?: string;
   tags: string[];
 };
 
@@ -23,8 +23,10 @@ export default function Experience() {
   const t = useTranslations('experience');
 
   return (
-    <div className="flex flex-col gap-12">
-      <Typography variant={'h1'}>{t('header')}</Typography>
+    <div className="flex flex-col gap-4">
+      <Typography className="bg-gradient-to-r from-pink-600 to-violet-600 bg-clip-text text-transparent" variant={'h1'}>
+        {t('header')}
+      </Typography>
 
       <Doctari />
       <Endava />

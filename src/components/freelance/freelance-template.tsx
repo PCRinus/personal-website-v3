@@ -10,7 +10,7 @@ export default function FreelanceTemplate({ title, period, description, tags }: 
     <div className="flex flex-col gap-3">
       <div>
         <div>
-          <Typography variant={'p'} className="font-semibold text-slate-300">
+          <Typography variant={'p'} className="font-semibold">
             {period}
           </Typography>
         </div>
@@ -18,9 +18,7 @@ export default function FreelanceTemplate({ title, period, description, tags }: 
         <Typography variant={'h3'}>{title}</Typography>
       </div>
 
-      <Typography variant={'p'} className="text-slate-300">
-        {description}
-      </Typography>
+      <Typography variant={'p'}>{description}</Typography>
 
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
