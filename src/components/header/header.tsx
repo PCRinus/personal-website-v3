@@ -7,10 +7,8 @@ import { useEffect, useState } from 'react';
 
 import LanguageToggle from './language-toggle';
 import ThemeToggle from './theme-toggle';
-import Drawer from '../ui/drawer';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showGoBackButton, setShowGoBackButton] = useState(false);
   const pathname = usePathname();
 
@@ -34,8 +32,6 @@ export default function Header() {
           <ThemeToggle />
         </div>
       </header>
-
-      <Drawer isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
     </>
   );
 }
