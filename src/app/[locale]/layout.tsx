@@ -43,7 +43,7 @@ export default function RootLayout({
         <NextIntlClientProvider locale={locale} messages={translations}>
           <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
             <Header />
-            <main className="flex-1 px-6 py-4">{children}</main>
+            <main className="flex-1 px-6 py-4 md:px-16">{children}</main>
             <Toaster />
             <Footer />
           </ThemeProvider>

@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-background/15 supports-[backdrop-filter]:bg-background/15 sticky top-0 flex items-center justify-between px-4 py-4 backdrop-blur">
+      <header className="bg-background/15 supports-[backdrop-filter]:bg-background/15 sticky top-0 flex items-center justify-between px-4 py-4 backdrop-blur md:px-10">
         <div className="flex items-center gap-[2px]">
           {showGoBackButton && (
             <Link href="/" className="contents">
@@ -27,7 +27,7 @@ export default function Header() {
             </Link>
           )}
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3 md:gap-6">
           <LanguageToggle />
           <ThemeToggle />
         </div>

@@ -23,14 +23,14 @@ export default function Home() {
         </a>
       </Typography>
 
-      <div className="flex gap-4">
-        <a className="flex grow" href="https://github.com/PCRinus" target="_blank">
+      <div className="flex gap-4 md:gap-6">
+        <a className="flex grow md:grow-0" href="https://github.com/PCRinus" target="_blank">
           <Button type="button" variant={'default'} className="flex grow gap-2 text-lg">
             <Github />
             {t('buttons.github')}
           </Button>
         </a>
-        <a className="flex grow" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
+        <a className="flex grow md:grow-0" href="https://www.linkedin.com/in/mircea-casapu/" target="_blank">
           <Button type="button" variant={'default'} className="flex grow gap-2 text-lg">
             <Linkedin />
             {t('buttons.linkedin')}
