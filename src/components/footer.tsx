@@ -8,7 +8,7 @@ export default function Footer() {
   const t = useTranslations('footer');
 
   return (
-    <footer className="relative flex flex-shrink-0 items-center p-6">
+    <footer className="relative flex flex-shrink-0 items-center justify-center p-6">
       <Typography variant={'p'} className="text-center">
         {t.rich('text', {
           tailwind: (chunks) => (
