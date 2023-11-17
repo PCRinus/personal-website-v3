@@ -1,7 +1,6 @@
 'use client';
 
 import { useForm as useFormspree } from '@formspree/react';
-import { DevTool } from '@hookform/devtools';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -59,8 +58,6 @@ export default function Contact({ className }: ContactFragmentProps) {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>{t('header')}</Typography>
-
-      <DevTool control={form.control} placement="top-left" />
 
       <Form {...form}>
         <form onSubmit={(e) => handleSubmit(e)} className="space-y-4 text-black dark:text-slate-200">
