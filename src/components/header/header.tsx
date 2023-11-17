@@ -1,9 +1,9 @@
 'use client';
 
 import { ChevronLeft } from 'lucide-react';
-import { usePathname } from 'next-intl/client';
-import Link from 'next-intl/link';
 import { useEffect, useState } from 'react';
+
+import { Link, usePathname } from '@/i18n';
 
 import LanguageToggle from './language-toggle';
 import ThemeToggle from './theme-toggle';

@@ -1,7 +1,7 @@
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Link from 'next-intl/link';
 
+import { Link } from '@/i18n';
 import { cn } from '@/lib/utils';
 
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';

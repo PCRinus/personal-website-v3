@@ -1,9 +1,10 @@
 'use client';
 
 import { useForm as useFormspree } from '@formspree/react';
+import { DevTool } from '@hookform/devtools';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 
@@ -14,6 +15,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Typography } from '../ui/typography';
+import { useToast } from '../ui/use-toast';
 
 type ContactFragmentProps = {
   className?: string;
@@ -22,7 +24,8 @@ type ContactFragmentProps = {
 export default function Contact({ className }: ContactFragmentProps) {
   const t = useTranslations('contact');
   const [serverState, sendToFormspree] = useFormspree(process.env.NEXT_PUBLIC_FORMSPREE_KEY ?? '');
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
+  const { toast } = useToast();
 
   const formSchema = z.object({
     email: z
@@ -42,25 +45,31 @@ export default function Contact({ className }: ContactFragmentProps) {
     },
   });
 
-  useEffect(() => {
-    if (serverState.succeeded) {
-      form.reset();
-      setSubmitted(true);
-    }
-  }, [serverState, form]);
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    form.handleSubmit((data) => sendToFormspree(data))();
+    toast({
+      title: t('form.success.title'),
+      description: t('form.success.description'),
+    });
+    form.reset();
+    form.clearErrors();
+  };
 
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       <Typography variant={'h2'}>{t('header')}</Typography>
 
+      <DevTool control={form.control} placement="top-left" />
+
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(sendToFormspree)} className="space-y-4 text-black dark:text-slate-200">
+        <form onSubmit={(e) => handleSubmit(e)} className="space-y-4 text-black dark:text-slate-200">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('form.email.label')}</FormLabel>
+                <FormLabel className="text-md">{t('form.email.label')}</FormLabel>
                 <FormControl>
                   <Input placeholder={t('form.email.placeholder')} {...field} />
                 </FormControl>
@@ -74,7 +83,7 @@ export default function Contact({ className }: ContactFragmentProps) {
             name="fullName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('form.fullName.label')}</FormLabel>
+                <FormLabel className="text-md">{t('form.fullName.label')}</FormLabel>
                 <FormControl>
                   <Input placeholder={t('form.fullName.placeholder')} {...field} />
                 </FormControl>
@@ -88,7 +97,7 @@ export default function Contact({ className }: ContactFragmentProps) {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('form.message.label')}</FormLabel>
+                <FormLabel className="text-md">{t('form.message.label')}</FormLabel>
                 <FormControl>
                   <Textarea placeholder={t('form.message.placeholder')} {...field} />
                 </FormControl>
@@ -96,15 +105,14 @@ export default function Contact({ className }: ContactFragmentProps) {
               </FormItem>
             )}
           />
-          <Button type="submit" disabled={!!Object.keys(form.formState.errors).length || serverState.submitting}>
+          <Button
+            type="submit"
+            className="text-md flex grow gap-2"
+            disabled={!!Object.keys(form.formState.errors).length || serverState.submitting}
+          >
+            <Send className="scale-[85%]" />
             {t('form.submit')}
           </Button>
-
-          {submitted && (
-            <Typography variant="p" className="dark:text-slate-200">
-              {t('form.success')}
-            </Typography>
-          )}
         </form>
       </Form>
     </div>

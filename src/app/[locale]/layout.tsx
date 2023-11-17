@@ -2,7 +2,7 @@ import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { getTranslator } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 import Footer from '@/components/footer';
 import Header from '@/components/header/header';
@@ -12,7 +12,7 @@ import { locales } from '@/i18n';
 import { cn } from '@/lib/utils';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslator(locale, 'home');
+  const t = await getTranslations({ locale, namespace: 'home' });
 
   return {
     title: t('metadata.title'),

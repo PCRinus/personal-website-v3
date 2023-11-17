@@ -160,7 +160,10 @@
         "error": "Message needs to be longer than 10 characters."
       },
       "submit": "Submit",
-      "success": "Message sent successfully!"
+      "success": {
+        "title": "Message sent successfully!",
+        "description": "Thanks for reaching out! I will get back to you as soon as possible."
+      }
     }
   },
   "footer": {

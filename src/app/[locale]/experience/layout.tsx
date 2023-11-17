@@ -1,7 +1,7 @@
-import { getTranslator } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslator(locale, 'experience');
+  const t = await getTranslations({ locale, namespace: 'experience' });
 
   return {
     title: t('metadata.title'),

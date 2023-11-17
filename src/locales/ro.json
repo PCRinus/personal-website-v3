@@ -157,7 +157,10 @@
         "error": "Mesajul trebuie sa fie mai lung de 10 caractere."
       },
       "submit": "Trimite",
-      "submitted": "Mesajul a fost trimis cu succes"
+      "submitted": {
+        "title":"Mesajul a fost trimis cu succes",
+        "description": "Îți mulțumesc pentru mesaj! Voi răspunde cât de curând posibil."
+      }
     }
   },
   "footer": {

@@ -1,6 +1,7 @@
 import { Languages } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next-intl/client';
+
+import { usePathname, useRouter } from '@/i18n';
 
 import { Button } from '../ui/button';
 import {
