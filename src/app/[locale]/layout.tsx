@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 import { notFound } from 'next/navigation';
@@ -44,6 +45,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange enableSystem>
             <Header />
             <main className="flex-1 px-6 py-4 md:px-16">{children}</main>
+            <Analytics />
             <Toaster />
             <Footer />
           </ThemeProvider>
